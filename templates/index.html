@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>파이썬 풀어보기</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐍 파이썬 풀어보기</h1>
+    
+    <div class="question-box">
+      <h2>문제:</h2>
+      <pre id="python-question">
+print("Hello, Python!")
+      </pre>
+    </div>
+
+    <form id="answer-form">
+      <label for="user-output">예상 출력:</label>
+      <textarea id="user-output" placeholder="출력 결과를 입력하세요" rows="5" required></textarea>
+      <button type="submit">제출</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h3>결과</h3>
+      <p id="feedback"></p>
+      <p><strong>정답 출력:</strong></p>
+      <pre id="actual-output"></pre>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

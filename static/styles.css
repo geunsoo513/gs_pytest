@@ -1,0 +1,104 @@
+/* 기본 스타일 리셋 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 배경과 폰트 설정 */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  color: #333;
+  padding: 40px;
+}
+
+/* 중앙 정렬 컨테이너 */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+/* 문제 박스 */
+.question-box {
+  background-color: #f1f8e9;
+  border-left: 6px solid #558b2f;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+
+.question-box h2 {
+  margin-bottom: 10px;
+  color: #33691e;
+}
+
+#python-question {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 입력 폼 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* 제출 버튼 */
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* 결과 영역 */
+#result {
+  background-color: #fffde7;
+  border: 2px dashed #fbc02d;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#feedback {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
